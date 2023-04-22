@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Reset Password</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Choose New Password</h3>
+      <p>Almost done. Enter your new password and you are all set.</p>
+
+      <form onkeyup="return validation()">
+        <p>Create a password</p>
+        <input type="password" id="password" placeholder="Enter password" />
+
+        <p>Confirm password</p>
+        <input type="password" id="cpass" placeholder="Confirm password" />
+
+        <ul>
+          <li id="lcase">one lowercase character</li>
+          <li id="spchar">one special character</li>
+          <li id="ucase">one uppercase character</li>
+          <li id="min_length">8 character minimum</li>
+          <li id="number">one number</li>
+          <li id="confirm_pass">password matched</li>
+        </ul>
+        <input type="reset" id="reset_btn" value="Reset Password" />
+      </form>
+    </div>
+  </body>
+</html>
